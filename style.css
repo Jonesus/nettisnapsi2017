@@ -42,8 +42,18 @@ iframe {
 
 img {
     width: 90%;
+    margin: auto;
     padding-top: 2vh;
     padding-bottom: 2vh;
+}
+
+.article-container {
+    padding: 2vh;
+    width: 35vw;
+    margin: auto;
+    margin-bottom: 3vh;
+    border-radius: 5px;
+    background-color: rgba(50, 50, 50, 0.7);
 }
 
 
@@ -109,22 +119,18 @@ a:hover {
 
 p {
     color: #FFF;
+    padding-left: 3vh;
+    padding-right: 3vh;
     font-size: 2.5vh;
     line-height: 150%;
     font-family: 'Ruda', sans-serif;
     text-align: justify;
-    padding: 2vh;
-    width: 35vw;
-    margin: auto;
-    margin-bottom: 3vh;
-    border-radius: 5px;
-    background-color: rgba(50, 50, 50, 0.7);
 }
 
 
 /* Go mobile or go home */
 @media (max-width: 1200px) {
-    p {
+    .article-container {
         width: 65vw;
     }
     h1 {
