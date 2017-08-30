@@ -1,6 +1,5 @@
 /*
   Stylesheet for NettiS'napsi 2017
-  Author: Jonesus & StackOverflow
 */
 
 /* Page elements */
@@ -36,7 +35,7 @@ i {
 
 iframe {
     width: 90%;
-    min-height: 40vw;
+    min-height: 25vw;
     margin: auto;
     display: block;
 }
@@ -121,6 +120,8 @@ p {
     background-color: rgba(70, 70, 70, 0.6);
 }
 
+
+/* Go mobile or go home */
 @media (max-width: 1080px) {
     p {
         width: 65vw;
@@ -135,5 +136,8 @@ p {
     }
     i {
         font-size: 3vh !important;
+    }
+    iframe {
+        min-height: 40vw;
     }
 }
