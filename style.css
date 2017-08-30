@@ -24,6 +24,7 @@ iframe {
 img {
     width: 90%;
     margin: auto;
+    display: block;
     padding-top: 2vh;
     padding-bottom: 2vh;
 }
