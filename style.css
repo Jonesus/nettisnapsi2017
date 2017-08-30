@@ -2,6 +2,7 @@
   Stylesheet for NettiS'napsi 2017
 */
 
+
 /* Page elements */
 body {
     margin: 0;
@@ -9,28 +10,8 @@ body {
     width: calc(100vw - 34px);
 }
 
-.hidden {
-    display: none;
-}
-
-.visible {
-    display: block;
-}
-
-.button {
-    position: fixed;
-    width: 6vh;
-    padding: 1.5vh;
-    padding-bottom: 0;
-    margin-left: 14vw;
-}
-
 i {
-    font-size: 5vh !important;
-}
-
-.content {
-    margin: 2vw;
+    font-size: 5vh !important; /* Sorry */
 }
 
 iframe {
@@ -47,6 +28,26 @@ img {
     padding-bottom: 2vh;
 }
 
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.content {
+    margin: 2vw;
+}
+
+.button {
+    position: fixed;
+    width: 6vh;
+    padding: 1.5vh;
+    padding-bottom: 0;
+    margin-left: 14vw;
+}
+
 .article-container {
     padding: 2vh;
     width: 35vw;
@@ -55,6 +56,7 @@ img {
     border-radius: 5px;
     background-color: rgba(50, 50, 50, 0.7);
 }
+
 
 
 /* Styles for video in the background */
@@ -86,6 +88,7 @@ img {
     width: 100%;
     z-index: 10000;
 }
+
 
 
 /* Text styles */
@@ -126,6 +129,7 @@ p {
     font-family: 'Ruda', sans-serif;
     text-align: justify;
 }
+
 
 
 /* Go mobile or go home */
