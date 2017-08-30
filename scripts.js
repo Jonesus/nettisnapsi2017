@@ -1,11 +1,18 @@
 $(document).ready(function() {
 
-    // Transformation on click
+    // Toggle between menu and content on click
     $('a').click( function(e) {
-        $('a').fadeToggle()
-        setTimeout(function() {
+        if ( $('p').css('display') == 'none' ) {
+            $('a').fadeToggle()
+            setTimeout(function() {
+                $('p').fadeToggle()
+            }, 300);
+        } else {
             $('p').fadeToggle()
-        }, 300);
+            setTimeout(function() {
+                $('a').fadeToggle()
+            }, 300);
+        }
     })
 
 });

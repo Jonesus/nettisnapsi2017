@@ -4,6 +4,12 @@
 */
 
 /* Page elements */
+body {
+    margin: 0;
+    padding: 0;
+    width: calc(100vw - 34px);
+}
+
 .hidden {
     display: none;
 }
@@ -12,28 +18,27 @@
     display: block;
 }
 
-.fadeIn {
-    opacity: 1;
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    -ms-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
+.button {
+    position: fixed;
+    min-width: 6vw;
+    width: 6vw;
+    padding: 1.5vw;
+    padding-bottom: 0;
+    margin-left: 8vw;
 }
 
-.fadeOut {
-    opacity: 0;
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    -ms-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
+i {
+    font-size: 5vw !important;
+}
+
+.content {
+    margin: 5vw;
 }
 
 
 /* Styles for video in the background */
 .video-container {
-      position: absolute;
+      position: fixed;
       top: 0;
       bottom: 0;
       width: 100%;
@@ -48,7 +53,7 @@
     width: auto;
     height: auto;
     
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
