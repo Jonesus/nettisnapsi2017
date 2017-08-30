@@ -2,16 +2,18 @@ $(document).ready(function() {
 
     // Toggle between menu and content on click
     $('a').click( function(e) {
-        if ( $('p').css('display') == 'none' ) {
+        var id = e.target.id;
+        var targetElement = '#p' + id;
+        if ( $(targetElement).css('display') == 'none' ) {
             $('a').fadeToggle()
             setTimeout(function() {
-                $('p').fadeToggle()
-            }, 300);
+                $(targetElement).fadeToggle()
+            }, 400);
         } else {
-            $('p').fadeToggle()
+            $('p').fadeOut()
             setTimeout(function() {
                 $('a').fadeToggle()
-            }, 300);
+            }, 400);
         }
     })
 
