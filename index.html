@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="style.css">
     
     <!-- Fonts from Google -->
-    <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jura:300,400|Dosis:600|Ruda" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
     <!-- JQuery -->
@@ -22,18 +21,33 @@
 
   <body>
     <script src="scripts.js"></script>
-
     <div class="video-overlay">
       <div class="content">
-        <h1 id="p4" class="visible">NettiS'napsi 2017</h1>
-        <a class="hidden button"><i class="material-icons">arrow_back</i></a>
-        <a id="1" class="visible">Artikkeli</a>
-        <a id="2" class="visible">Shitpostaus</a>
-        <a id="3" class="visible">Dänkki meemu</a>
-        <a id="4" class="visible">Gildis it is</a>
-        <p id="p1" class="hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in tellus condimentum, luctus metus et, sollicitudin augue. Aliquam erat volutpat. Vestibulum eu faucibus tortor. Donec suscipit mi volutpat est vulputate bibendum at sit amet lectus. Integer cursus, dui id faucibus blandit, nisl libero faucibus quam, interdum mattis justo velit sed orci. Etiam aliquam rutrum diam. Mauris aliquam laoreet erat, in euismod eros sodales sit amet. Pellentesque vel nisi dapibus, tempus nibh vitae, tempor elit. Suspendisse libero lacus, dignissim ac elementum bibendum, feugiat ut sem. Aenean tempus condimentum eros, id ultricies quam convallis eget. Morbi eu viverra lacus. Ut laoreet mi eget neque facilisis blandit. Nullam vestibulum condimentum vestibulum. </p>
-        <p id="p2" class="hidden">lol jupa opi koodaa ja tee snapsis<img src="http://i3.mirror.co.uk/incoming/article9456387.ece/ALTERNATES/s615/Holstein-dairy-cow-at-Bega-NSW.jpg"> </p>
-        <p id="p3" class="hidden"><iframe width="560" height="315" src="https://www.youtube.com/embed/Jgwnh-s289Q" frameborder="0" allowfullscreen></iframe></p>
+
+        <div id="home" class="visible">
+          <h1>NettiS'napsi 2017</h1>
+          <p>Syksyä on odotettu ja syksy on saapunut. Kesän aikana on kuitenki varmasti herännyt monia kysymyksiä, joihin kaikkiin tämä S'napsi tulee vastaamaan. </p>
+          <a id="1" class="visible">Artikkeli</a>
+          <a id="2" class="visible">Shitpostaus</a>
+          <a id="3" class="visible">Dänkki meemu</a>
+          <a id="0" class="visible">Gildis it is</a>
+        </div>
+
+        <a id="back" class="hidden button"><i class="material-icons">arrow_back</i></a>
+
+        <div id="article1" class="hidden">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in tellus condimentum, luctus metus et, sollicitudin augue. Aliquam erat volutpat. Vestibulum eu faucibus tortor. Donec suscipit mi volutpat est vulputate bibendum at sit amet lectus. Integer cursus, dui id faucibus blandit, nisl libero faucibus quam, interdum mattis justo velit sed orci. Etiam aliquam rutrum diam. Mauris aliquam laoreet erat, in euismod eros sodales sit amet. Pellentesque vel nisi dapibus, tempus nibh vitae, tempor elit. Suspendisse libero lacus, dignissim ac elementum bibendum, feugiat ut sem. Aenean tempus condimentum eros, id ultricies quam convallis eget. Morbi eu viverra lacus. Ut laoreet mi eget neque facilisis blandit. Nullam vestibulum condimentum vestibulum. </p>
+        </div>
+
+        <div id="article2" class="hidden">
+          <p>lol jupa opi koodaa ja tee snapsis<img src="http://i3.mirror.co.uk/incoming/article9456387.ece/ALTERNATES/s615/Holstein-dairy-cow-at-Bega-NSW.jpg"> </p>
+        </div>
+
+        <div id="article3" class="hidden">
+          <p><iframe width="560" height="315" src="https://www.youtube.com/embed/Jgwnh-s289Q" frameborder="0" allowfullscreen></iframe></p>
+        </div>
+
+
       </div>
     </div>
 
