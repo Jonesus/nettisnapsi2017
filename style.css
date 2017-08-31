@@ -152,6 +152,9 @@ p {
     line-height: 150%;
     font-family: 'Ruda', sans-serif;
     text-align: justify;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 p sup {
