@@ -27,10 +27,18 @@ $(document).ready(function() {
             resetToHome();
         }
         else if ( e.target.id == 0 ) { // Special case for kiltis
-            var video = document.getElementById('kiltis');
-            if ( !video.src.endsWith('dank.webm') ) {
-                video.src = 'dank.webm';
-                $(video).parent().load();
+            var video0 = document.getElementById('kiltis0');
+            var src = $(video0).parent().get(0).currentSrc;
+            var split = src.split('/');
+            var file = split[split.length - 1];
+            var filename = file.split('.')[0];
+            var filetype = file.split('.')[1];
+
+            if ( filename !== 'dank' ) {
+                var element = $('source[src="'+file+'"]').first();
+                element.attr('src', 'dank.'+filetype);
+                $(element).parent().load();
+                $(element).parent().get(0).play();
             }
             switchToArticle(e.target.id);
         }
