@@ -110,6 +110,10 @@ h1 {
     padding-bottom: 2vh;
 }
 
+h1 sup {
+    font-size: 2vw;
+}
+
 h2 {
     color: #FFF;
     font-size: 4.5vh;
@@ -150,6 +154,10 @@ p {
     text-align: justify;
 }
 
+p sup {
+    font-size: 1vh;
+}
+
 
 
 /* Go mobile or go home */
@@ -157,6 +165,9 @@ p {
     h1 {
         font-size: 10vw;
         max-width: 85vw;
+    }
+    h1 sup {
+        font-size: 4vw;
     }
     h2 {
         width: 70vw;
@@ -168,6 +179,9 @@ p {
     }
     p {
         font-size: 2vh;
+    }
+    p sup {
+        font-size: 0.7vh;
     }
     .article-container {
         width: 70vw;
