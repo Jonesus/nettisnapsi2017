@@ -41,6 +41,9 @@ $(document).ready(function() {
                 $(element).parent().get(0).play();
             }
             switchToArticle(e.target.id);
+            setTimeout(function() {
+                $('#article0').fadeOut();
+            }, 12000);
         }
         else {
             switchToArticle(e.target.id);

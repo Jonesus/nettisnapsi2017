@@ -46,7 +46,8 @@ img {
     width: 6vh;
     padding: 1.5vh;
     padding-bottom: 0;
-    margin-left: 14vw;
+    top: 10vh;
+    left: 10vw;
 }
 
 .article-container {
@@ -167,9 +168,10 @@ p {
         width: 65vw;
     }
     .button {
-        margin-left: 0;
         width: 4vh;
         padding: 0.5vh;
+        top: 6vh;
+        left: 3vw;
     }
     i {
         font-size: 3vh !important;
