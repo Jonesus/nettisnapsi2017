@@ -8,6 +8,7 @@ $(document).ready(function() {
         $('[id*=article]').fadeOut();
         $('.button').fadeOut();
         setTimeout(function() {
+            $('#kiltis').fadeIn();
             $('#home').fadeIn();
         }, 400);
     }
@@ -44,6 +45,10 @@ $(document).ready(function() {
             setTimeout(function() {
                 $('#article0').fadeOut();
             }, 12000);
+        }
+        else if ( e.target.id == 4 ) { // Special case for peli
+            $('#kiltis').fadeOut();
+            switchToArticle(e.target.id);
         }
         else {
             switchToArticle(e.target.id);
