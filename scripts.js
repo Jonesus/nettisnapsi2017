@@ -35,9 +35,9 @@ $(document).ready(function() {
             var filename = file.split('.')[0];
             var filetype = file.split('.')[1];
 
-            if ( filename !== 'dank' ) {
+            if ( filename !== 'kiltislapse' ) {
                 var element = $('source[src="'+file+'"]').first();
-                element.attr('src', 'dank.'+filetype);
+                element.attr('src', 'kiltislapse.'+filetype);
                 $(element).parent().load();
                 $(element).parent().get(0).play();
             }
