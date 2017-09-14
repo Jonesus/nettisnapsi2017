@@ -46,7 +46,7 @@ $(document).ready(function() {
                 $('#article0').fadeOut();
             }, 12000);
         }
-        else if ( e.target.id == 4 ) { // Special case for peli
+        else if ( e.target.id == 5 ) { // Special case for peli
             var peli = $('#peli');
             peli.attr("src", peli.data("src")); // Hack to load game only after click
             $('#kiltis').fadeOut();
