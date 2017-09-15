@@ -60,6 +60,12 @@ img {
     background-color: rgba(50, 50, 50, 0.7);
 }
 
+#peli {
+    height: 700px;
+    width: 900px;
+    padding-top: 16vh;
+}
+
 
 
 /* Styles for video in the background */
@@ -198,5 +204,8 @@ p sup {
     }
     iframe {
         min-height: 40vw;
+    }
+    #peli {
+        padding-top: 12vh;
     }
 }
