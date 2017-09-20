@@ -4,6 +4,7 @@
 
 $(document).ready(function() {
 
+    // Hides all articles and returns to main screen
     function resetToHome() {
         $('[id*=article]').fadeOut();
         $('.button').fadeOut();
@@ -13,6 +14,7 @@ $(document).ready(function() {
         }, 400);
     }
 
+    // Hides the main screen and switches to article based on clicked element id
     function switchToArticle(id) {
         $('#home').fadeToggle();
         setTimeout(function() {
@@ -21,13 +23,12 @@ $(document).ready(function() {
         }, 400);
     }
 
-
     // Toggle between menu and content on click
     $('a').click( function(e) {
         if ( e.target.id == 'back' || $(e.target).parent().attr('id') == 'back' ) {
             resetToHome();
         }
-        else if ( e.target.id == 0 ) { // Special case for kiltis
+        else if ( e.target.id == 1 ) { // Special case for kiltis
             var video0 = document.getElementById('kiltis0');
             var src = $(video0).parent().get(0).currentSrc;
             var split = src.split('/');
@@ -46,7 +47,7 @@ $(document).ready(function() {
                 $('#article0').fadeOut();
             }, 12000);
         }
-        else if ( e.target.id == 5 ) { // Special case for peli
+        else if ( e.target.id == 7 ) { // Special case for peli
             var peli = $('#peli');
             peli.attr("src", peli.data("src")); // Hack to load game only after click
             $('#kiltis').fadeOut();
