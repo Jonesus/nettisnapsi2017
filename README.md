@@ -1,4 +1,4 @@
 # nettisnapsi2017
 Web issue of our guild magazine
 
-inkubio.fi/snapsi2017
+https://www.inkubio.fi/snapsi2017
